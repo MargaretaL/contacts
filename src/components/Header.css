@@ -1,0 +1,11 @@
+ul {
+    display: flex;
+    flex-direction:row;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a, a:visited {
+    color: blue;
+    margin: 10px;
+}

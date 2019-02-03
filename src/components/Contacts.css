@@ -1,0 +1,13 @@
+
+.contacts {
+    padding: 50px;
+    width: 60%;
+    margin: auto;
+    background-color: lightyellow;
+}
+
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+}
+
