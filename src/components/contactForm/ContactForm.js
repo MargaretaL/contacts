@@ -72,7 +72,7 @@ class ContactForm extends Component {
                 </label>
                 <label>Country:
                     <select value={this.state.country} onChange={this.handleCountry} required>
-                        <option>
+                        <option disabled={true} value=''>
                         </option>
                         {this.options.map((country, index) => {
                             return (
