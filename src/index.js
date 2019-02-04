@@ -13,7 +13,7 @@ const initialState = localStorage.getItem('contacts') ? JSON.parse(localStorage.
 
 const store = createStore(rootReducer, initialState, middleware);
 
-store.subscribe(()=>{
+store.subscribe(() => {
     localStorage.setItem('contacts', JSON.stringify(store.getState()))
 });
 

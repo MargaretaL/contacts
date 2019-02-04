@@ -16,7 +16,7 @@ export const addContact = (contact) => dispatch => {
     )
 };
 
-export const editContact = (contact, index)=> dispatch => {
+export const editContact = (contact, index) => dispatch => {
     return (
         dispatch({
             type: EDIT_CONTACT,

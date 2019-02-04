@@ -10,8 +10,8 @@ import './DeleteContact.css'
 
 class DeleteContact extends Component {
 
-     handleDeleteContact = (contact) => {
-         this.props.dispatch(removeContact(contact));
+    handleDeleteContact = (contact) => {
+        this.props.dispatch(removeContact(contact));
         this.props.history.push('/');
     };
 
@@ -22,7 +22,9 @@ class DeleteContact extends Component {
                 <div>
                     <h3>{this.props.contact && this.props.contact.firstName} {this.props.contact && this.props.contact.lastName}</h3>
                 </div>
-                <button className="deletecontact__button" onClick={() => this.handleDeleteContact(this.props.contact)}>Delete</button>
+                <button className="deletecontact__button" onClick={() => this.handleDeleteContact(this.props.contact)}>
+                    Delete
+                </button>
                 <button className="deletecontact__button" onClick={() => this.props.history.goBack()}>Back</button>
 
             </div>

@@ -15,7 +15,7 @@ class ContactForm extends Component {
 
         this.state = {
             firstName: (props.contact && props.contact.firstName) || '',
-        lastName: (props.contact && props.contact.lastName) || '',
+            lastName: (props.contact && props.contact.lastName) || '',
             email: (props.contact && props.contact.email) || '',
             country: (props.contact && props.contact.country) || '',
         }
@@ -71,15 +71,15 @@ class ContactForm extends Component {
                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" onChange={this.handleEmail} required/>
                 </label>
                 <label>Country:
-                <select value={this.state.country} onChange={this.handleCountry} required>
-                    <option selected></option>
-                    {this.options.map((country, index) => {
-                        return (
-                            <option value={country} key={index}>{country}</option>
-                        )
-                    })
-                    }
-                </select>
+                    <select value={this.state.country} onChange={this.handleCountry} required>
+                        <option selected></option>
+                        {this.options.map((country, index) => {
+                            return (
+                                <option value={country} key={index}>{country}</option>
+                            )
+                        })
+                        }
+                    </select>
                 </label>
                 <button className="contactForm__button" type="submit">Submit</button>
             </form>

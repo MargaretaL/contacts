@@ -16,8 +16,12 @@ const Contact = (props) => {
                 <p>Email:</p><h4>{props.contact && props.contact.email}</h4>
                 <p>Country:</p><h4>{props.contact && props.contact.country}</h4>
             </div>
-            <button className="contact__button" onClick={()=> props.history.push(`/editcontact/${props.match.params.index}`)}>EDIT</button>
-            <button className="contact__button" onClick={() => props.history.push(`/deletecontact/${props.match.params.index}`)}>DELETE</button>
+            <button className="contact__button"
+                    onClick={() => props.history.push(`/editcontact/${props.match.params.index}`)}>EDIT
+            </button>
+            <button className="contact__button"
+                    onClick={() => props.history.push(`/deletecontact/${props.match.params.index}`)}>DELETE
+            </button>
         </div>
     )
 };

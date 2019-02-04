@@ -24,7 +24,7 @@ const Contacts = (props) => {
                         )
                     })}
                 </ul>
-                        <NavLink className="contacts__link contacts--link" to="/addcontact">Add contact</NavLink>
+                <NavLink className="contacts__link contacts--link" to="/addcontact">Add contact</NavLink>
             </div>
         </div>
     )
