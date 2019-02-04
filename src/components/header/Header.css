@@ -5,14 +5,27 @@ ul {
     list-style-type: none;
 }
 
+.App-header {
+    background-color: #282c34;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+
 .header__link{
     color: white;
-    margin: 10px;
+    margin: 20px;
     text-decoration: none;
     list-style-type: none;
+    font-weight: bold;
 }
 
 .header__link:hover{
     color: #e1e1e1;
-    margin: 10px;
+    margin: 20px;
 }

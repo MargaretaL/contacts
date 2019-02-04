@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import {BrowserRouter, Route} from 'react-router-dom';
 import './App.css';
 import Contacts from './components/contacts/Contacts'

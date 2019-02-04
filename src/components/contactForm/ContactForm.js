@@ -81,7 +81,7 @@ class ContactForm extends Component {
                     }
                 </select>
                 </label>
-                <button className="contactForm__button" type="submit">submit</button>
+                <button className="contactForm__button" type="submit">Submit</button>
             </form>
         )
     }

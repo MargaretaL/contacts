@@ -27,6 +27,7 @@ input[type=text], select {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-weight: bold;
     margin: 10px;
     cursor: pointer;
 }

@@ -23,11 +23,12 @@
     background-color: #282828;
     padding: 15px 25px 15px 25px;
     width: 100px;
-    color: #ffffff
+    color: #ffffff;
+    font-weight: bold;
 }
 
 .contacts--link:hover{
-    color: #dfdfdf
+    color: #dfdfdf;
 }
 
 .contacts__listitem {
@@ -42,6 +43,7 @@
     margin: auto;
     cursor: pointer;
     width: 200px;
+    font-weight: bold;
 }
 
 .contacts--item a:visited {

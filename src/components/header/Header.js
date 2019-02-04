@@ -15,10 +15,10 @@ class Header extends Component {
                 <header className="App-header">
                     <ul>
                         <li>
-                            <NavLink to="/" className="header__link">Contacts</NavLink>
+                            <NavLink to="/" className="header__link">CONTACTS</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/addcontact" className="header__link">Add contact</NavLink>
+                            <NavLink to="/addcontact" className="header__link">ADD CONTACT</NavLink>
                         </li>
                     </ul>
                 </header>

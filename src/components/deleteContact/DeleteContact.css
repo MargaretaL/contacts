@@ -1,0 +1,21 @@
+.deletecontact__button {
+    background-color: #282c34;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.deletecontact__button:hover {
+    color: #dfdfdf
+}
+
+.deletecontact__button:visited {
+    color: #e1e1e1;
+}
