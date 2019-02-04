@@ -28,6 +28,6 @@ The application allows the user to add, edit and remove contacts.
 
 ## Form
 
-The form for creating and editing contacts is uses the module _**country-list**_ , to get a list of countries. Email validation is achieved through a regex pattern.
+The form for creating and editing contacts uses the module _**country-list**_ , to get a list of countries. Email validation is achieved through a regex pattern.
 
 
