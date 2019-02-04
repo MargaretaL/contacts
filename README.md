@@ -24,7 +24,7 @@ Redux.js is used to achieve a centralized, more predictable application state.
 
 ## Functionality
 
-The application allows the user the add, edit and remove contacts.
+The application allows the user to add, edit and remove contacts.
 
 ## Form
 
