@@ -3,8 +3,8 @@
  */
 
 import React, {Component} from 'react'
-import ContactForm from './ContactForm';
-import {editContact} from '../redux/actions/contact'
+import ContactForm from '../contactForm/ContactForm';
+import {editContact} from '../../redux/actions/contact'
 import {connect} from 'react-redux';
 
 
@@ -12,13 +12,14 @@ class EditContact extends Component {
 
     handleEditContact = (contact) => {
         this.props.dispatch(editContact(contact, +this.props.match.params.index));
+        this.props.history.push(`/contact/${this.props.match.params.index}`)
     };
 
     render() {
         return (
             <div>
                 <h1>Edit contact</h1>
-                <h2>{this.props.contact.firstName}</h2>
+                <h2>{this.props.contact.firstName} {this.props.contact.lastName}</h2>
                 <ContactForm onSaveContact={this.handleEditContact} contact={this.props.contact}/>
             </div>
         )

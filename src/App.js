@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import {BrowserRouter, Route} from 'react-router-dom';
 import './App.css';
-import Contacts from './components/Contacts'
-import AddContact from './components/AddContact'
-import DeleteContact from './components/DeleteContact'
-import EditContact from './components/EditContact'
-import Contact from './components/Contact'
-import Header from './components/Header'
+import Contacts from './components/contacts/Contacts'
+import AddContact from './components/addContact/AddContact'
+import DeleteContact from './components/deleteContact/DeleteContact'
+import EditContact from './components/editContact/EditContact'
+import Contact from './components/contact/Contact'
+import Header from './components/header/Header'
 
 class App extends Component {
     render() {
@@ -19,7 +19,7 @@ class App extends Component {
                         <Route exact path="/addcontact" component={AddContact}/>
                         <Route exact path="/" component={Contacts}/>
                         <Route exact path='/contact/:index' component={Contact}/>
-                        <Route exact path='/deletecontact/:firstName' component={DeleteContact}/>
+                        <Route exact path='/deletecontact/:index' component={DeleteContact}/>
                         <Route exact path='/editcontact/:index' component={EditContact}/>
                     </div>
                 </BrowserRouter>

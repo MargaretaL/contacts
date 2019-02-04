@@ -3,8 +3,8 @@
  */
 
 import React, {Component} from 'react'
-import ContactForm from './ContactForm';
-import {addContact} from '../redux/actions/contact'
+import ContactForm from '../contactForm/ContactForm';
+import {addContact} from '../../redux/actions/contact'
 import {connect} from 'react-redux';
 
 
@@ -12,7 +12,7 @@ class AddContact extends Component {
 
     handleContact = (contact) => {
         this.props.dispatch(addContact(contact));
-        this.props.history.push(`/`)
+        this.props.history.push('/')
     };
 
     render() {
@@ -25,5 +25,13 @@ class AddContact extends Component {
     }
 }
 
+const mapStateToProps = ({contacts}, props) => {
+    const {index} = props.match.params;
+    const contact = contacts[index];
+    return {
+        contact: contact
+    }
+};
 
-export default connect()(AddContact);
+
+export default connect(mapStateToProps)(AddContact);

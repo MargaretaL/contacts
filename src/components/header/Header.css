@@ -1,0 +1,18 @@
+ul {
+    display: flex;
+    flex-direction:row;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.header__link{
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.header__link:hover{
+    color: #e1e1e1;
+    margin: 10px;
+}

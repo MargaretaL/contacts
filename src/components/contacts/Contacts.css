@@ -1,0 +1,53 @@
+
+.contacts {
+    padding: 50px;
+    width: 60%;
+    margin: auto;
+    background-color: #e0ffdd;
+}
+
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 100px;
+}
+
+.contacts__link {
+    text-decoration: none;
+    list-style-type: none;
+    color: #282c34;
+}
+
+.contacts--link {
+    background-color: #282828;
+    padding: 15px 25px 15px 25px;
+    width: 100px;
+    color: #ffffff
+}
+
+.contacts--link:hover{
+    color: #dfdfdf
+}
+
+.contacts__listitem {
+    background-color: #282c34;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    width: 200px;
+}
+
+.contacts--item a:visited {
+    color: #ffffff;
+}
+
+.contacts--item:hover {
+    color: #e1e1e1;
+}

@@ -70,7 +70,9 @@ class ContactForm extends Component {
                     <input value={this.state.email} type="text" name="name"
                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" onChange={this.handleEmail} required/>
                 </label>
+                <label>Country:
                 <select value={this.state.country} onChange={this.handleCountry} required>
+                    <option selected></option>
                     {this.options.map((country, index) => {
                         return (
                             <option value={country} key={index}>{country}</option>
@@ -78,7 +80,8 @@ class ContactForm extends Component {
                     })
                     }
                 </select>
-                <button type="submit">submit</button>
+                </label>
+                <button className="contactForm__button" type="submit">submit</button>
             </form>
         )
     }

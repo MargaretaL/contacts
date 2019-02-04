@@ -4,7 +4,7 @@
 
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
-import '../App.css';
+import '../../App.css';
 import './Header.css'
 
 
@@ -13,12 +13,12 @@ class Header extends Component {
         return (
             <div className="App">
                 <header className="App-header">
-                    <ul style={{}}>
-                        <li style={{}}>
-                            <NavLink to="/">Home</NavLink>
+                    <ul>
+                        <li>
+                            <NavLink to="/" className="header__link">Contacts</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/addcontact">Add contact</NavLink>
+                            <NavLink to="/addcontact" className="header__link">Add contact</NavLink>
                         </li>
                     </ul>
                 </header>
